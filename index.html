@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
 
@@ -17,22 +17,42 @@
             ser modificado para "Estou estudando JQuery!"</p>
 
         <!-- resolução do exercício -->
-        <p>Estou estudando JQuery!</p>
-        <button type="button" id="exc1"></button>
+        <p id="texto">Estou estudando JQuery!</p>
+        <button type="button" id="exc1">Clique aqui</button>
     </section>
+
     <section id="exercicio2">
         <h1>Exercício 2</h1>
         <p>Crie um elemento de parágrafo que contenha seu nome completo. Adicione um estilo de cor de fonte e
             plano de fundo a ele. Além disso, adicione um botão. Quando o botão é clicado deve haver a alternância
             da visibilidade deste parágrafo, isto é, se estava visível fica invisível e vice-versa.</p>
+
+        <!-- resolução do exercício 2 -->
+        <p class="nome">Joice Cristina Alves de Oliveira</p>
+        <button type="button" id="exc2">Clique aqui</button>
     </section>
+
     <section id="exercicio3">
         <h1>Exercício 3</h1>
         <p>Crie um menu com efeito de acordeon. Para isso, você irá usar a ideia de lista e sub lista. A lista principal
             apresentará os principais itens do menu. Um item da lista pode ter uma sub lista que irá conter as opções
             mais específicas. Você deverá programar para que quando o item da lista principal for clicado, os itens da
             respectiva sub lista aparecem com o efeito de deslizar (slide).</p>
+
+        <!-- resolução do exercicio 3 -->
+        <ul>
+            <li class="lista">Item 1
+                <ul>
+                    <li class="sublista">subitem 1</li>
+                    <li class="sublista">subitem 2</li>
+                    <li class="sublista">subitem 3</li>
+                </ul>
+            </li>
+            <li class="lista">Item 2</li>
+            <li class="lista">Item 3</li>
+        </ul>
     </section>
+
     <section id="exercicio4">
         <h1>Exercício 4</h1>
         <p>Crie um formulário com três campos de texto, são eles: 1) nome (não pode conter espaços em branco,
@@ -41,16 +61,38 @@
             deverá ser validado utilizando JQuery (não utilize recursos do HTML5 neste exercício). As mensagens de
             erro devem aparecer em um elemento do tipo parágrafo logo acima do formulário. Se preferir, você pode
             personalizar ainda mais e colocar as mensagens logo abaixo dos respectivos campos que as originaram.</p>
+
+        <!-- resolução do exercicio 4 -->
+        <form action="" id="formulario">
+            
+            <label for="name">Nome:</label>
+            <input type="text" placeholder="Nome" id="name" name="name" required>
+            <p id="errorname"></p>
+            <br>
+
+            <label for="address">Endereço:</label>
+            <input type="text" placeholder="Endereço" id="address" name="address" required>
+            <p id="erroraddress"></p>
+            <br>
+
+            <button type="button" id="exc4">Enviar</button>
+        </form>
+        
+        
     </section>
+
     <section id="exercicio5">
         <h1>Exercício 5</h1>
         <p>Crie uma galeria de imagens com botões de próximo e anterior. Para isso, você deverá baixar 5 imagens
             da internet de sua preferência e colocá-las em uma pasta dentro de seu projeto. Quando o botão anterior
             for clicado, apresente a imagem anterior e, de forma semelhante, quando o botão próximo for clicado,
             apresente a imagem posterior a atual. Utilize o efeito de fade em sua galeria.</p>
+
+        <!-- resolução do exercicio 5 -->
+
     </section>
     
-    <script src="./scripts/lib/jquery.3.7.0.min.js"></script>
-    <script src="./scripts/global.js"></script>
+    <script src="/scripts/lib/jquery.3.7.0.min.js"></script>
+    <script src="/scripts/global.js"></script>
 </body>
 </html>

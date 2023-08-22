@@ -1,0 +1,61 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f6f8fc;
+}
+
+section {
+    border: double;
+    padding: 10px;
+    margin: 40px;
+}
+
+.menu {
+    border: none;
+}
+
+h1 {
+    text-align: center;
+}
+
+button {
+    border-radius: 1.5rem;
+    padding: 10px;
+}
+
+.nome {
+    background-color: purple;
+    color: white;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    list-style: none;
+}
+
+#errorname {
+    color: red;
+    margin: 10px;
+}
+
+#erroraddress {
+    color: red;
+    margin: 10px;
+}
+
+label {
+    display: inline-block;
+    width: 100px;
+}
+
+input {
+    width: 300px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
