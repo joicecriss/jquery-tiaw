@@ -1,0 +1,22 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f6f8fc;
+}
+
+section {
+    border: double;
+    padding: 10px;
+    margin: 40px;
+}
+
+.menu {
+    border: none;
+}
+
+h1 {
+    text-align: center;
+}
