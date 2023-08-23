@@ -53,3 +53,23 @@ $(document).ready(function(){
 })
 
 //exercicio 5
+
+$(document).ready(function() {
+    var currentSlide = 0;
+    var totalSlides = $('.carousel-container img').length;
+    
+    $('.btnNext').click(function() {
+      currentSlide = (currentSlide + 1) % totalSlides;
+      updateSlide();
+    });
+    
+    $('.btnPrev').click(function() {
+      currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+      updateSlide();
+    });
+    
+    function updateSlide() {
+      $('.carousel-container img').hide();
+      $('.carousel-container img:eq(' + currentSlide + ')').show();
+    }
+  });
