@@ -15,6 +15,9 @@ section {
 
 .menu {
     border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 h1 {
@@ -26,6 +29,8 @@ button {
     padding: 5px 10px;
     border: none;
     cursor: pointer;
+    color: purple;
+    background-color: rgb(243, 218, 243);
 }
 
 .nome {
@@ -60,6 +65,13 @@ input {
     width: 300px;
     padding: 5px;
     margin-bottom: 10px;
+    background-color: rgb(243, 218, 243);
+    color: purple;
+}
+
+input:hover {
+    border: purple;
+    background-color: rgb(243, 218, 243);
 }
 
 .carousel {
@@ -90,4 +102,18 @@ input {
 
 .btnPrev {
     margin-right: 10px;
+}
+
+a {    
+    text-decoration: none;
+}
+
+.card {
+    border: black;
+    border-radius: 0.2rem;
+    text-align: center;
+    color: rgb(243, 218, 243);
+    background-color: purple;
+    padding: 20px 20px ;
+    margin: 2rem;
 }
