@@ -69,7 +69,7 @@ $(document).ready(function() {
   });
   
   function updateSlide() {
-    $('#carousel img').fadeTo("slow", 1).hide();
-    $('#carousel img:eq(' + constSlide + ')').fadeOut("slow", 3000).show();
+    $('#carousel img').hide();
+    $('#carousel img:eq(' + constSlide + ')').show();
   }
 });
